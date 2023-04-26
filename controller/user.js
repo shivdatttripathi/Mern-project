@@ -3,9 +3,7 @@ const User = require("../Model/user");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
-exports.userget = (req, res) => {
-  res.send("hello Hom").end();
-};
+
 
 exports.UserRegister = async (req, res) => {
   const { fullName, phone, email, password } = await req.body;
