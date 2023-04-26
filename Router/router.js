@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// const {userget, UserRegister, UserLogin,aboutCheck,HomeCheck,C} = require('../controller/user');
+// const { UserRegister, UserLogin,aboutCheck,HomeCheck,} = require('../controller/user');
 
 const { UserRegister, UserLogin, DataCheck, ContactSave,Logout} = require('../controller/user');
 const { validUserCheck } = require("../middlware/auth");
