@@ -2,7 +2,7 @@ const express = require('express');
 require('./Connection/DataBase');
 const app = express();
 const cros = require('cors');
-require("dotenv").config();
+// require("dotenv").config();
 const cookiParser =require('cookie-parser')
 const UserRouter =require('./Router/router')
 const path =require('path')
