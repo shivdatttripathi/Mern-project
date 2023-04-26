@@ -3,10 +3,9 @@ const router = express.Router();
 
 // const {userget, UserRegister, UserLogin,aboutCheck,HomeCheck,C} = require('../controller/user');
 
-const {userget, UserRegister, UserLogin, DataCheck, ContactSave,Logout} = require('../controller/user');
+const { UserRegister, UserLogin, DataCheck, ContactSave,Logout} = require('../controller/user');
 const { validUserCheck } = require("../middlware/auth");
 
-router.get('/', userget);
 
 router.post("/UserRegister", UserRegister);
 router.post("/signin",UserLogin);
